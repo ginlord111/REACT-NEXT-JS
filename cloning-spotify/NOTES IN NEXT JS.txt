@@ -1,0 +1,6 @@
+CLIENT COMPONENT
+-useRouter or when there's a button to navigate other route
+
+
+Server Side Component
+-when to make api
