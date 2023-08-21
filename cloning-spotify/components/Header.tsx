@@ -38,8 +38,8 @@ const {user} = useUser();
           <button onClick={()=>router.forward()} className="flex bg-black items-center justify-center rounded-full hover:opacity-75 transition"> <RxCaretRight size={35} className='text-white' /></button>
         </div>
         <div className="flex md:hidden gap-x-2 items-center">
-          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"><HiHome className='text-black' size={20}/></button>
-          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"><BiSearch className='text-black' size={20}/></button>
+          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"><HiHome className='text-black' onClick={()=>router.push('/')} size={20}/></button>
+          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"><BiSearch className='text-black' onClick={()=>router.push('/search')} size={20}/></button>
         </div>
         <div className="flex justify-between items-center gap-x-4">
          {user ? (<div className="flex gap-x-4 "><Button className="bg-white font px-6 py-2 font-bold" onClick={handleLogout}>Log Out</Button>
