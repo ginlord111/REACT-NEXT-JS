@@ -10,9 +10,9 @@ const useOnPlay = (songs:Songs[]) =>{
     const {user} = useUser()
     
     const OnPlay = (id:string) =>{
-        if(!user) {
-            return authmodal.onOpen()
-        }
+        // if(!user) {
+        //     return authmodal.onOpen()
+        // }
          player.setId(id)
          player.setIds(songs.map((song)=> song.id))
     }
